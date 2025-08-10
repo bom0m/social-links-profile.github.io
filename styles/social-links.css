@@ -1,0 +1,179 @@
+p {
+  font-family: Inter, Arial;
+}
+
+body {
+  margin: 0; /* remove default spacing */
+      height: 100vh; /* full height */
+      background-image: url('favicon-32x32.png'); /* your favicon image */
+      background-repeat: no-repeat; /* don't repeat unless you want tiles */
+      background-position: center; /* center the image */
+      background-size: cover; /* scale to fill the screen */
+}
+
+/*body {
+  background-color: hsl(0, 0%, 8%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1000px;
+  top: 100;
+  bottom: 100;
+}*/
+
+.body-color {
+  background-color: hsl(0, 0%, 8%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1000px;
+  top: 100;
+  bottom: 100;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.social-link{
+  background-color: hsl(0, 0%, 12%);
+  width: 450px;
+  height: 650px;
+  border-radius: 20px;
+}
+
+.avatar {
+    height: 150px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.jessica {
+   height: 100px;
+   width: 100px;
+   border-radius: 50px;
+}
+
+.name-descriptions{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.jess {
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+  margin: 0;
+}
+
+.london{
+  font-size: 14px;
+  font-weight: bold;
+  color: hsl(75, 94%, 57%);
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.frontend {
+  color: white;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+.social-media{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.github, .front-end, .linkedin, 
+.instagram, .twitter{
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  background-color: hsl(0, 0%, 20%);
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  transition: background-color 0.5s;
+  cursor: pointer;
+} 
+
+.github:hover, .front-end:hover, .linkedin:hover, 
+.instagram:hover, .twitter:hover {
+  background-color: hsl(75, 94%, 57%);
+  color:black;
+}
+
+.github {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 135px;
+  padding-right: 135px;
+}
+
+.front-end {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 102px;
+  padding-right: 102px;
+}
+
+.linkedin {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 129px;
+  padding-right: 129px;
+}
+
+.twitter{
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 135px;
+  padding-right: 135px;
+}
+
+.instagram {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 124px;
+  padding-right: 124px;
+}
+
+
+
+/* Mobile styles for max width 375px */
+@media (max-width: 375px) {
+  body {
+    margin: 0;
+    font-size: 14px; /* slightly smaller text */
+  }
+
+  .social-link {
+    width: 90%; /* make container fit small screens */
+    padding: 15px;
+  }
+
+  .avatar img.jessica {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+  }
+
+  .name-descriptions p {
+    text-align: center;
+    margin: 5px 0;
+  }
+
+  .social-media button {
+    width: 100%; /* make buttons full-width on mobile */
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+}
